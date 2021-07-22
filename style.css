@@ -1,0 +1,19 @@
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 0px;
+	align-content: center;
+	justify-items: center;
+}
+
+.header {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #f1f9ff;
+	height: 200px;
+	width: 80%;
+}
