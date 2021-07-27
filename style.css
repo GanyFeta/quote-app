@@ -38,7 +38,7 @@ h1 {
 	align-items: center;
 	margin-top: 2rem;
 	width: 70%;
-	_border: 1px solid;
+	min-height: 370px;
 }
 
 .box {
