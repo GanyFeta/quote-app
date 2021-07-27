@@ -37,7 +37,38 @@ h1 {
 	flex-flow: row nowrap;
 	align-items: center;
 	margin-top: 2rem;
+	width: 70%;
+	_border: 1px solid;
 }
+
+.box {
+	background: #fff;
+	padding: 2em;
+	position: relative;
+	box-shadow: 0 5px 25px -10px rgba(0, 0, 0, 0.15);
+}
+.box::before,
+.box::after {
+	content: "";
+	position: absolute;
+	top: 90%;
+	bottom: 23px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	z-index: -1;
+}
+.box::before {
+	background: transparent;
+	left: 5px;
+	right: 35px;
+	transform: rotate(-3deg);
+}
+.box::after {
+	background: transparent;
+	left: 35px;
+	right: 5px;
+	transform: rotate(3deg);
+}
+
 blockquote {
 	margin: 0 1rem;
 	font-size: xx-large;
